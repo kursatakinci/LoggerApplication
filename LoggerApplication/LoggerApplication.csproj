@@ -23,5 +23,9 @@
     <ProjectReference Include="..\LoggerApplication.Service\LoggerApplication.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 
 </Project>
