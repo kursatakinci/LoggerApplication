@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LoggerApplication.Core\LoggerApplication.Core.csproj" />
+    <ProjectReference Include="..\LoggerApplication.Repository\LoggerApplication.Repository.csproj" />
+    <ProjectReference Include="..\LoggerApplication.Service\LoggerApplication.Service.csproj" />
+  </ItemGroup>
+
+</Project>
