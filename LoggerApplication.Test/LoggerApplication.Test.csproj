@@ -7,9 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Moq" Version="4.14.5" />
     <PackageReference Include="nunit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0"/>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LoggerApplication.Repository\LoggerApplication.Repository.csproj" />
+    <ProjectReference Include="..\LoggerApplication.Service\LoggerApplication.Service.csproj" />
+    <ProjectReference Include="..\LoggerApplication\LoggerApplication.csproj" />
   </ItemGroup>
 
 </Project>

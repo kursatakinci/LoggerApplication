@@ -8,7 +8,10 @@ namespace LoggerApplication.Core.Helper
         {
             string json = JsonSerializer.Serialize(jsonElement);
 
-            return json;
+            if (jsonElement.ValueKind == JsonValueKind.String)
+                return JsonSerializer.Deserialize<string>(json);
+            else
+                return json;
         }
     }
 }
